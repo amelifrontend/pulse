@@ -1,0 +1,115 @@
+.carousel {
+    padding: 81px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &__inner {
+        width: 750px;
+        margin: 0 auto; 
+        img{
+            display: block;
+            margin: 0 auto;
+        }       
+    }
+    /* .slick-prev, .slick-next {
+        border: none;
+        background: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        img {
+            width: 31px;
+            height: 50px;
+        }
+    }
+    .slick-next {
+        left: auto;
+        right: -66px;
+    }
+ */
+
+ /* .slick-dots {
+    display: flex;
+    justify-content: center;
+    li {
+        list-style-type: none;
+        margin: 0 5px;
+    }        
+} */
+    .prev, .next {
+        border: none;
+        background: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        img {
+            width: 31px;
+            height: 50px;
+        }    
+    }
+    .next {
+        left: auto;
+        right: -66px;
+    }
+    
+
+    .tns-nav{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 10px;
+        button {
+            background-color:none;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 14px;
+            margin: 0 5px;
+        }
+        &-active {
+            background-color: red;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .carousel {
+        padding: 81px 0 0 0;
+        .prev {
+            left: -26px;
+        
+        }
+        .next {
+            right: -26px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .carousel {
+        .prev {
+            left: -5px;
+        
+        }
+        .next {
+            right: -5px;
+        }
+    }
+}
+@media (max-width: 970px) {
+    .carousel {
+        .prev, .next {
+            display: none;
+        }
+    }
+}
+@media (max-width: 760px){
+    .carousel {
+        &__inner {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+}
